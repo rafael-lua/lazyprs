@@ -9,6 +9,7 @@
     "lazyprs": "tsx src/index.ts",
     "build": "unbuild",
     "prepack": "unbuild",
+    "publish:public": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -49,6 +50,6 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   }
 }
