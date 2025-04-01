@@ -16,7 +16,12 @@
     "citty": "^0.1.6",
     "consola": "^3.4.2",
     "execa": "^9.3.1",
-    "nanoid": "^5.1.5",
-    "tsx": "^4.19.3"
+    "nanoid": "^5.1.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
+    "types-node": "0.0.1-security",
+    "unbuild": "^3.5.0"
   }
 }
