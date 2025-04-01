@@ -1,0 +1,22 @@
+{
+  "name": "lazy-prs",
+  "version": "1.0.0",
+  "description": "Create PRs directly from the command line for a range of commits",
+  "main": "index.js",
+  "scripts": {
+    "lazyprs": "tsx index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rafael-lua",
+  "license": "MIT",
+  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808",
+  "dependencies": {
+    "@types/node": "^22.13.16",
+    "citty": "^0.1.6",
+    "consola": "^3.4.2",
+    "execa": "^9.3.1",
+    "nanoid": "^5.1.5",
+    "tsx": "^4.19.3"
+  }
+}
