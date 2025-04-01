@@ -1,5 +1,5 @@
 {
-  "name": "@rafael-lua/lazyprs",
+  "name": "@rafael79/lazyprs",
   "version": "0.1.0",
   "description": "Create PRs directly from the command line for a range of commits",
   "bin": {
@@ -9,7 +9,7 @@
     "lazyprs": "tsx src/index.ts",
     "build": "unbuild",
     "prepack": "unbuild",
-    "publish:public": "npm publish --access public",
+    "publish": "pnpm publish --access public --no-git-checks",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
