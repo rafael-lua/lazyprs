@@ -21,6 +21,7 @@ const cli = defineCommand({
       type: "string",
       description: "Created branch name",
     },
+    // TODO: use prompt for title
     title: {
       type: "string",
       description: "Title to use for pr",
@@ -42,6 +43,7 @@ const cli = defineCommand({
       type: "boolean",
       description: "Keep local branch after pr is created",
     },
+    // TODO: use prompt for body
     body: {
       type: "string",
       description: "Body to use for pr",
@@ -117,7 +119,9 @@ const cli = defineCommand({
       base,
       "--title",
       title,
-      ...(ignoreTemplate ? ["--body", body] : []),
+      ...(ignoreTemplate
+        ? ["--body", body]
+        : ["--fill", "--body-file", ".github/PULL_REQUEST_TEMPLATE.md"]),
       ...(draft ? ["--draft"] : []),
     ])
 
