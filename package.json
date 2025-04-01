@@ -1,10 +1,14 @@
 {
-  "name": "lazy-prs",
-  "version": "1.0.0",
+  "name": "lazyprs",
+  "version": "0.1.0",
   "description": "Create PRs directly from the command line for a range of commits",
-  "main": "index.js",
+  "bin": {
+    "lazyprs": "./dist/index.mjs"
+  },
   "scripts": {
-    "lazyprs": "tsx index.ts",
+    "lazyprs": "tsx src/index.ts",
+    "build": "unbuild",
+    "prepack": "unbuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,5 +27,20 @@
     "tsx": "^4.19.3",
     "types-node": "0.0.1-security",
     "unbuild": "^3.5.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
