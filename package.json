@@ -1,6 +1,6 @@
 {
   "name": "@rafael79/lazyprs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Create PRs directly from the command line for a range of commits",
   "bin": {
     "lazyprs": "./dist/index.mjs"
